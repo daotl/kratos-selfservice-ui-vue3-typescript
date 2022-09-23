@@ -28,8 +28,12 @@ defineProps<{
   p(v-else-if='isUiNodeImageAttributes(node.attributes)') Image
   p(v-else-if='isUiNodeScriptAttributes(node.attributes)') Script
   p(v-else-if='isUiNodeTextAttributes(node.attributes)') Text
+  //- button(
+      v-else-if='node.type === "submit"'
+      type='submit'
+    )
   button(
-    v-else-if='node.type === "submit"'
+    v-else
     type='submit'
   )
   .messages(v-if='node.messages')

@@ -1,5 +1,5 @@
 {
-  "name": "kratos-selfservice-ui-vue3-typescript",
+  "name": "@daotl/kratos-selfservice-ui-vue3-typescript",
   "version": "0.8.2-alpha.1",
   "scripts": {
     "dev": "vite",
@@ -12,11 +12,13 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@ory/client": "0.2.0-alpha.37",
     "@ory/integrations": "^0.2.2",
     "@ory/kratos-client": "^0.8.2-alpha.1",
     "axios": "^0.25.0",
     "pinia": "^2.0.11",
     "sass-loader": "^10",
+    "uuid": "^9.0.0",
     "vue": "^3.2.29",
     "vue-router": "^4.0.12"
   },
@@ -24,6 +26,7 @@
     "@rushstack/eslint-patch": "^1.1.0",
     "@types/jsdom": "^16.2.14",
     "@types/node": "^16.11.22",
+    "@types/uuid": "^8.3.4",
     "@vitejs/plugin-vue": "^2.1.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^10.0.0",
